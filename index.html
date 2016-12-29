@@ -1,0 +1,39 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <title>Edison Huff</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Edison Huff Homepage">
+    <meta name="author" content="Edison Huff">
+    <meta name="viewport" content="width=device-width, initial-scale = 1, maximum-scale=1, user-scalable=no" />
+
+    <link href="styles.css" rel="stylesheet">
+    <link href="favicon.ico" rel="icon" type="img/ico">
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJ7O3JI9vbI-81M5nD2mDpiNdwT4FMwN8&libraries=places&callback=initMap"></script>
+
+  </head>
+
+  <body>
+    <div id="map"></div>
+    <input
+      id="searchbar"
+      class="open"
+      placeholder="Search for things nearby"
+    ></input>
+    <div id="sidebar">
+      <button id="sidebar-toggle">
+        <->
+      </button>
+      <ul id="list">
+      </ul>
+    </div>
+    <div id="detail">
+      <button id="detail-toggle">
+        X
+      </button>
+      <div id="detail-content"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

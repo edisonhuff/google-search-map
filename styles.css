@@ -1,0 +1,173 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+}
+
+h4 {
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+p {
+  margin: 6px;
+}
+
+button {
+  display: none;
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  right: -32px;
+  top: 0px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 2px 4px rgba(0,0,0,0.2);
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+#map {
+  height: 100%;
+  background linear-gradient(to bottom right, white, orange);
+  transition-duration: 0.3s;
+}
+
+#searchbar {
+  position: absolute;
+  top: 0;
+  left: -310px;
+  z-index: 1;
+  height: 32px;
+  width: 272px;
+  padding: 6px 12px;
+  margin: 6px;
+  outline: none;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  transition-duration: 0.3s;
+}
+
+#sidebar {
+  position: absolute;
+  left: -310px;
+  z-index: 0;
+  top: 0px;
+  bottom: 0px;
+  width: 310px;
+  border-top: 58px solid #FFA500;
+  background-color: #fff;
+  box-shadow: 2px 4px rgba(0,0,0,0.2);
+  transition-duration: 0.3s;
+}
+
+#sidebar button {
+  top: -48px;
+}
+
+#sidebar ul {
+  list-style: none;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  overflow-y: scroll;
+}
+
+#sidebar li {
+  padding: 12px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+#sidebar li:hover {
+  background: linear-gradient(to bottom right, #fff, #ddd);
+  cursor: pointer;
+}
+
+#detail {
+  position: absolute;
+  left: -310px;
+  z-index: 2;
+  top: 0px;
+  bottom: 0px;
+  width: 310px;
+  margin-top: 58px;
+  background-color: #fff;
+  box-shadow: 2px 4px rgba(0,0,0,0.2);
+  transition-duration: 0.3s;
+  overflow-y: scroll;
+}
+
+#detail button {
+  top: 2px;
+  right: 4px;
+  height: 24px;
+  width: 24px;
+  box-shadow: none;
+  transition-duration: 0.3s;
+  border-radius: 50%;
+}
+
+#detail button:hover {
+  background-color: #ffa500;
+  box-shadow: 2px 4px rgba(0,0,0,0.2);
+}
+
+#detail div div{
+  padding: 12px;
+}
+
+.contact {
+  background-color: #303e49;
+  color: #fff;
+}
+
+.contact a{
+  color: #fff;
+}
+
+.reviews {
+  padding: 0px !important;
+  text-align: center;
+}
+
+.reviews div {
+  padding: 12px 0px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
+.reviews div:hover {
+  background: linear-gradient(to bottom right, #fff, #ddd);
+}
+
+.reviews h4 {
+  margin: 12px 0px;
+}
+
+.reviews img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.reviews .review-text{
+  text-align: initial;
+}
+
+.open {
+  left: 0px !important;
+}
+
+.push {
+  margin-left: 310px;
+}
+
+.show {
+  display: inherit !important;
+}
