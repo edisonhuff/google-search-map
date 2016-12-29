@@ -11,7 +11,6 @@ function initMap(setSelectedPlace) {
   var details  = {};
       sidebar  = {
         placeList: [],
-        view: null,
       },
       zenefits = {
         lat: 37.785112,
@@ -228,7 +227,6 @@ function initMap(setSelectedPlace) {
       return;
     }
 
-    console.log(place);
     placesService.getDetails(
       { placeId: place.place_id },
       function(placeDetails, status) {
@@ -241,7 +239,6 @@ function initMap(setSelectedPlace) {
           return;
         }
 
-        console.log(placeDetails);
         details[place.place_id] = placeDetails;
         $detail.appendChild(detailsDiv(placeDetails));
       }
